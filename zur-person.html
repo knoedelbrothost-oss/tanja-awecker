@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tanja Awecker</title>
+    <link rel="icon" type="image/png" href="media/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            background: #fafacd;
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+        }
+
+        footer {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #8fa246;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top"></div>
+    <main>
+        <div id="header"></div>
+        <!-- <iframe src="header.html" frameborder="0" width="100%"></iframe> -->
+        <script>
+            fetch('header.html')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('header').innerHTML = html;
+                });
+        </script>
+    <footer>
+        <div style="display: flex; margin-bottom: 0px;">
+            <div class="container" style="margin: 0px; padding: 0; text-align: left; font-size: 15px; color: white;">
+                © 2024 Psychotherapie Tanja Awecker
+            </div>
+            <div class="container" style="margin: 0px; padding: 0;">
+
+            </div>
+            <div class="container" style="margin: 0px; text-align: right; padding: 0;">
+                <a href="index.html#top">nach oben</a>
+            </div>
+        
+    </footer>
+</body>
+
+</html>
